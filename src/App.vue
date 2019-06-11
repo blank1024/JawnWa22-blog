@@ -2,7 +2,9 @@
     div#app
         header-top.header-top
         main.blog-body
-            router-view
+            keep-alive
+                router-view(v-if="$route.meta.keepAlive")
+            router-view(v-if="!$route.meta.keepAlive")
         Footer.footer
         
 </template>
