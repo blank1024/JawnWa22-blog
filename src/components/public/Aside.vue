@@ -5,8 +5,6 @@
             div.content
                 ul.entry
                     li 
-                        a Lymon
-                    li 
                         a(href="https://blog.nekokuro0xf.info/") 猫黑的游戏屋
 </template>
 
