@@ -17,7 +17,8 @@
                 //-         a
                 //-     li.s-menu
         div.full-bg-img
-            div.title(v-if="progressBar.progress === 100")
+            transition(name="fade")
+                div.title(v-if="progressBar.progress === 100")
         Progress
                 
 </template>
@@ -57,7 +58,7 @@ export default {
 header {
     user-select: none;
     height: 100vh;
-    transition: height 0.5s;
+    transition: height 1s;
     @media screen and (max-width: 820px) {
         height: 40px;
     }
@@ -154,6 +155,13 @@ ul.nav-list {
     }
 }
 
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
 
 </style>
 
