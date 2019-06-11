@@ -8,7 +8,7 @@ import store from './store'
 
 
 Vue.config.productionTip = false;
-Vue.prototype.util = util; // 公用方法
+Vue.prototype.util = util; // 继承公用方法
 
 
 new Vue({
