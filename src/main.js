@@ -10,10 +10,6 @@ import store from './store'
 Vue.config.productionTip = false;
 Vue.prototype.util = util; // 公用方法
 
-router.beforeEach((to, from, next) => {
-    // store.commit('updateProgress', 0);
-    next();
-})
 
 new Vue({
     router,
