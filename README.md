@@ -1,4 +1,4 @@
-# vue-blog6
+# jawnwa-blog
 
 ## Project setup
 ```
