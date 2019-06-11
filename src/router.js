@@ -13,6 +13,9 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home,
+      meta: {
+          keepAlive: true
+      }
     },
     {
       path: '/about',
@@ -25,7 +28,10 @@ export default new Router({
     {
         path: '/article/:id',
         component: Article,
-        props: true
+        props: true,
+        meta: {
+            keepAlive: false
+        }
     }
   ]
 })
