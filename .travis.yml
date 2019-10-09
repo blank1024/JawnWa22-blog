@@ -1,2 +1,2 @@
-language: javascript
-script: true
+language: node_js
+node_js: stable
