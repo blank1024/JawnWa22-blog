@@ -4,8 +4,7 @@ install:
 - yarn
 
 before_script:
-script:
-- yarn run build
+script: yarn run build
 after_success:
 after_script:
 
