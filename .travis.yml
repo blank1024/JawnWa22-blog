@@ -1,5 +1,8 @@
 language: node_js
 node_js: stable
+before_install: 
+- openssl aes-256-cbc -K $encrypted_1fc90f464345_key -iv $encrypted_1fc90f464345_iv
+  -in deploy_rsa.enc -out deploy_rsa -d
 install:
 - yarn
 
@@ -7,7 +10,6 @@ before_script:
 script: yarn run build
 after_success:
 after_script:
-
 branches: 
   only:
   - master
