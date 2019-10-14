@@ -14,5 +14,5 @@ install:
 before_script:
 script: yarn run build
 after_success:
-- rsync -azv --delete ./dist/* root@47.102.143.46/root
+- rsync -azv --delete ./dist/* root@47.102.143.46:/root/dist
 after_script:
