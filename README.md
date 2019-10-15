@@ -1,3 +1,5 @@
+
+[![Build Status](https://travis-ci.org/jawnwa22/JawnWa22-blog.svg?branch=master)](https://travis-ci.org/jawnwa22/JawnWa22-blog)
 # jawnwa-blog
 
 ## Project setup
